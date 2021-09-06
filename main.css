@@ -1,0 +1,225 @@
+html{
+	height:100%;
+}
+body{
+    min-height:100%;
+	padding:0px;
+	margin:0px;
+	background-color: #e0e0e0;
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header1{
+	width:100%;
+	height: 200px;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(covid19.jpg);
+	background-position:center;
+				
+}
+.sop{
+	color: white;
+	text-align: center;
+	padding-top: 2%;
+	font: Roboto;
+	font-size: 24px;
+}
+ul{
+	display: flex;
+	list-style:none;
+	justify-content: center;
+}
+li{
+	font-size: 22px;		
+	float:left;
+	color: white;
+	margin:8px 3%;
+}
+.container0{
+    width: 96%;
+    height: auto;
+	margin: 2% 2%;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 8px #000000;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(coviddocs2.jpg);
+	background-position: center;
+}
+.text1{
+    font: ariel;
+	font-size: 80px;
+	color: White;
+	text-align: center;
+	padding-top: 8%;
+}
+.text2{
+    font: sans-serif;
+	font-size: 120px;
+	color: White;
+	text-align: center;
+	padding-top: 5%;
+}
+.text3{
+    font: sans-serif;
+	font-size: 18px;
+	color: White;
+	text-align: center;
+	padding-top: 12%;
+}
+.thankyou1{
+	width: 96%;
+	height: 650px;
+	background-color: white;
+	border-radius: 30px;
+	margin: 0% 2% 2% 2%;
+    font: helvetica;
+	font-size: 12px;
+	color:black;
+	text-align: center;
+}
+.hero1{
+	width: 300px;
+	height: 400px;
+	float: left;
+	margin-top: 3%;
+	margin-left: 4%;
+	border-radius: 150px;
+	position: sticky;
+
+}
+#heronote{
+	text-align: center;
+	font-size: 42px;
+}
+.container1{
+	width: 420px;
+	height: 500px;
+	/* margin-top: 6%; */
+	margin-right: 6%;
+	float: right;
+	position: sticky;
+	text-align: center;
+}
+.note1{
+	/* float: right;
+	width: 600px;
+	height: 600px; */
+	text-align: center;
+	font-size: medium;
+	font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+.thankyou2{
+	width: 96%;
+	height: 650px;
+	background-color: white;
+	border-radius: 30px;
+	margin: 2% 2%;
+    font: helvetica;
+	font-size: 12px;
+	color:black;
+	text-align: center;
+}
+#heronote2{
+	text-align: center;
+	font-size: 42px;
+}
+.container2{
+	width: 500px;
+	height: 350px;
+	margin-top: 6%;
+	margin-left: 6%;
+	float: left;
+	position: sticky;
+	text-align: center;
+}
+.hero2{
+	width: 300px;
+	height: 400px;
+	float: right;
+	margin-top: 3%;
+	margin-right: 4%;
+	border-radius: 150px;
+	position: sticky;
+}
+.stats{
+	text-align: left;
+	font-size: 36px;
+	font-weight: bold;
+}
+.disclaimer1{
+    width: auto;
+	padding-bottom: 0px;
+	margin-top: auto;
+	font: sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	color:black; 
+	text-align: center;
+	margin-top: 33%;
+}
+.thankyou3{
+	width: 96%;
+	height: 650px;
+	background-color: white;
+	border-radius: 30px;
+	margin: 2% 2%;
+    font: helvetica;
+	font-size: 12px;
+	color:black;
+	text-align: center;
+}
+.container3{
+	width: 400px;
+	height: 600px;
+	margin-top: 6%;
+	margin-right: 6%;
+	float: right;
+	position: sticky;
+	text-align: center;
+}
+.hero3{
+	width: 300px;
+	height: 400px;
+	float: left;
+	margin-left: 4%;
+	margin-top: 8%;
+	border-radius: 150px;
+	position: sticky;
+}
+.note2{
+	text-align: center;
+	font-size: 18px;
+}
+.ln{
+	text-align: left;
+	font-size: 20px;
+	font-style: italic;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+.note3{
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: bold;
+	font-style: italic;
+	font-family: 'Times New Roman', Times, serif;
+}
+.footer{
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	padding-bottom: 0px;
+	margin-top: auto;
+}
+.contact{
+	color: yellow;
+	margin-left: 8%;
+	font-size: 50px;
+}
+.devs{
+	color: grey;
+	margin-left: 16%;
+	margin-top: 4%;
+}
+.devs a{
+	color:grey;
+}
