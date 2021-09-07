@@ -12,28 +12,31 @@ body{
 }
 .header1{
 	width:100%;
-	height: 200px;
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(covid19.jpg);
+	height: auto;
+	display: grid;
+	grid-template-areas: "header"
+	                     "content";
+align-items: center;	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(covid19.jpg);
 	background-position:center;
 				
 }
 .sop{
+grid-area: header;
 	color: white;
+	height: auto;
 	text-align: center;
-	padding-top: 2%;
 	font: Roboto;
-	font-size: 24px;
+	font-size: 2rem;
 }
 ul{
+grid-area: content;
 	display: flex;
 	list-style:none;
-	justify-content: center;
+	justify-content: space-around;
 }
 li{
-	font-size: 22px;		
-	float:left;
+	font-size: 1rem;		
 	color: white;
-	margin:8px 3%;
 }
 .container0{
     width: 96%;
@@ -41,164 +44,159 @@ li{
 	margin: 2% 2%;
     border-radius: 30px;
     box-shadow: 0 0 40px 8px #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(coviddocs2.jpg);
 	background-position: center;
 }
 .text1{
     font: ariel;
-	font-size: 80px;
+	font-size: 5rem;
 	color: White;
 	text-align: center;
 	padding-top: 8%;
 }
 .text2{
     font: sans-serif;
-	font-size: 120px;
+	font-size: 7rem;
 	color: White;
 	text-align: center;
 	padding-top: 5%;
 }
 .text3{
-    font: sans-serif;
-	font-size: 18px;
+   font: sans-serif;
+	font-size: 1rem;
+	font-weight: 200;
 	color: White;
 	text-align: center;
-	padding-top: 12%;
+	padding-top: 10%;
 }
 .thankyou1{
 	width: 96%;
-	height: 650px;
+	height: auto;
 	background-color: white;
+	margin: 2% 2%;
 	border-radius: 30px;
-	margin: 0% 2% 2% 2%;
-    font: helvetica;
-	font-size: 12px;
-	color:black;
-	text-align: center;
+ display: grid;
+ grid-template-areas: "header"
+                      "content";
 }
-.hero1{
-	width: 300px;
-	height: 400px;
-	float: left;
-	margin-top: 3%;
-	margin-left: 4%;
-	border-radius: 150px;
-	position: sticky;
-
-}
-#heronote{
-	text-align: center;
-	font-size: 42px;
+.heronote{
+ grid-area: header;
+ width: auto;
+ max-height:100%;
+ text-align: center;
+ font-size: 2em;
+ font-weight: bold;
 }
 .container1{
-	width: 420px;
-	height: 500px;
-	/* margin-top: 6%; */
-	margin-right: 6%;
-	float: right;
-	position: sticky;
-	text-align: center;
+	grid-area: content;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 8%;
 }
-.note1{
-	/* float: right;
-	width: 600px;
-	height: 600px; */
-	text-align: center;
-	font-size: medium;
-	font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+.hero1>img{
+ width: 50%;
+ max-height: 100%;
+	border-radius: 150px;
+	margin-left: 12%;
+	float:left;
+}
+.text4{
+			 width:50%;
+				max-height:100%;
+				text-align:center;
+				margin-right:8%;
+				font-size: 1em;
 }
 .thankyou2{
 	width: 96%;
-	height: 650px;
+	height: auto;
 	background-color: white;
 	border-radius: 30px;
 	margin: 2% 2%;
-    font: helvetica;
-	font-size: 12px;
-	color:black;
-	text-align: center;
+ display: grid;
+ grid-template-areas: "header"
+                      "content"
+                      "footer";
 }
-#heronote2{
+.heronote2{
+grid-area: header;
+width: auto;
+max-height: 100%;
 	text-align: center;
-	font-size: 42px;
+	font-size: 2em;
 }
 .container2{
-	width: 500px;
-	height: 350px;
-	margin-top: 6%;
-	margin-left: 6%;
-	float: left;
-	position: sticky;
-	text-align: center;
-}
-.hero2{
-	width: 300px;
-	height: 400px;
-	float: right;
-	margin-top: 3%;
-	margin-right: 4%;
-	border-radius: 150px;
-	position: sticky;
+	grid-area: content;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .stats{
+width: 50%;
+max-height:100%;
 	text-align: left;
-	font-size: 36px;
+	font-size: 2em;
 	font-weight: bold;
+	margin-left:8%;
+}
+.hero2>img{
+	width: 50%;
+	max-height: 100%;
+	border-radius: 150px;
+	float:right;
+	margin-right: 12%;
 }
 .disclaimer1{
+grid-area: footer;
     width: auto;
-	padding-bottom: 0px;
-	margin-top: auto;
+    max-height:100%;
 	font: sans-serif;
-	font-size: 18px;
+	font-size: 1em;
 	font-weight: 200;
 	color:black; 
 	text-align: center;
-	margin-top: 33%;
 }
 .thankyou3{
 	width: 96%;
-	height: 650px;
+	height: auto;
 	background-color: white;
 	border-radius: 30px;
 	margin: 2% 2%;
-    font: helvetica;
-	font-size: 12px;
-	color:black;
-	text-align: center;
-}
-.container3{
-	width: 400px;
-	height: 600px;
-	margin-top: 6%;
-	margin-right: 6%;
-	float: right;
-	position: sticky;
-	text-align: center;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .hero3{
-	width: 300px;
-	height: 400px;
-	float: left;
-	margin-left: 4%;
-	margin-top: 8%;
+	width: 50%;
+	max-height: 100%;
 	border-radius: 150px;
-	position: sticky;
+	margin-left: 10%;
+}
+.container3{
+width: 50%;
+max-height:100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 6% 6%;
 }
 .note2{
 	text-align: center;
-	font-size: 18px;
+	font-size: 1em;
 }
 .ln{
 	text-align: left;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-style: italic;
-	margin-top: 8%;
-	margin-bottom: 8%;
 }
 .note3{
-	font-size: 18px;
-	line-height: 1.5;
+	font-size: 1em;
+	line-height: 1.2;
 	font-weight: bold;
 	font-style: italic;
 	font-family: 'Times New Roman', Times, serif;
@@ -213,12 +211,13 @@ li{
 .contact{
 	color: yellow;
 	margin-left: 8%;
-	font-size: 50px;
+	font-size: 3em;
 }
 .devs{
 	color: grey;
 	margin-left: 16%;
 	margin-top: 4%;
+	font-size: 1.2rem;
 }
 .devs a{
 	color:grey;
